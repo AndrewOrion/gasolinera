@@ -25,6 +25,22 @@ public class Repostaje {
 		this.litros=0;
 		this.agrario=this.gobierno= this.vuelves=false;
 	}
+	
+	
+
+	public Repostaje(String matricula, String nombre, String dni, Combustible combustible, double litros,
+			boolean agrario, boolean gobierno, boolean vuelves) {
+		this.matricula = matricula;
+		this.nombre = nombre;
+		this.dni = dni;
+		this.combustible = combustible;
+		this.litros = litros;
+		this.agrario = agrario;
+		this.gobierno = gobierno;
+		this.vuelves = vuelves;
+	}
+
+
 
 	public String getMatricula() {
 		return matricula;

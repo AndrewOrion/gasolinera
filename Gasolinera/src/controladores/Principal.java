@@ -13,7 +13,7 @@ public class Principal {
 	private FormularioAlta fAlta;
 	private List<Combustible> listaCombustibles;
 	private ListadoVentas fListado;
-	private List<Repostaje> listaRepostajes;
+	public List<Repostaje> listaRepostajes;
 
 	public Principal() {
 		fAlta = new FormularioAlta();
@@ -29,7 +29,7 @@ public class Principal {
 		listaCombustibles.add(new Combustible("Gasoil",1.773));
 		listaCombustibles.add(new Combustible("Gasolina Plus",1.832));
 		listaCombustibles.add(new Combustible("Gasoil Plus",1.842)); 
-		mostrarAlta();
+	
 		
 	}
 	
@@ -53,6 +53,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		Principal ppal = new Principal();
+		ppal.mostrarAlta();
 	}
 
 	public void mostrarAlta(int fila) {
